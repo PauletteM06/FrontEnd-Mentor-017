@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">SPLI <br> TTER</h1>
+  </header>
+
+  <section class="calculator-container">
+    <div class="inputs-section">
+      <label for="bill" class="bill-label">Bill</label>
+      <input id="bill" class="input-bill"  type="number" value="100">
+    
+      <fieldset class="btns">
+        <legend class="btns__legend">Select Tip %</legend>
+        <button class="btns__button button--selected">5%</button>
+        <button class="btns__button">10%</button>
+        <button class="btns__button">15%</button>
+        <button class="btns__button">25%</button>
+        <button class="btns__button">50%</button>
+        <input type="number" class="btns__custom" placeholder="Custom">
+      </fieldset>
+
+      <label for="people" class="people-label">Number of People <span id="alert"></span></label>
+      <input id="people" class="input-people" min="1" type="number" value="5">
+
+    </div>
+
+
+    <div class="result-section">
+      <div class="results">
+
+        <div>
+          <p class="results__amount">Tip Amount</p>
+          <p class="results__person">/ person</p>
+        </div>
+
+        <p class="results__value">0</p>
+
+        <div>
+          <p class="results__total" >Total</p>
+          <p class="results__total--person">/ person</p>
+        </div>
+
+        <p class="results__total--value">0</p>
+
+      </div>
+      
+      <button class="results__button">Reset</button>
+    </div>
+
+  </section>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Scarlett Márquez</a>.
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
